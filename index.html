@@ -263,25 +263,25 @@
                     </div>
                     <div>
                         <label for="email-input">Email<span aria-hidden="true" class="required">*</span></label>
-                        <input>
+                        <input type="email" id="email-input" name="email" required>
                     </div>
                     <div>
-                        <label>Phone<span>*</span></label>
-                        <input>
+                        <label for="number">Phone<span aria-hidden="true" class="required">*</span></label>
+                        <input id="tel"name="tel" type="tel" autocomplete="off" required>
                     </div>
                     <fieldset id="preferred-contact">
-                    <legend>Preferred Contact Method<span>*</span></legend>
+                    <legend>Preferred Contact Method<span aria-hidden="true" class="required">*</span></legend>
                         <div> 
-                            <input>
-                            <label>Email</label>
+                            <input id="contact-email" name="contact-method" type="radio" value="email" required>
+                            <label for="contact-email">Email</label>
                         </div>
                         <div>
-                            <input>
-                            <label>Text</label>
+                            <input id="contact-text" name="contact-method" type="radio" value="text" required>
+                            <label for="contact-text">Text</label>
                         </div>
                         <div>
-                            <input>
-                            <label>Phone</label>
+                            <input id="contact-phone" name="contact-method" type="radio" value="phone" required>
+                            <label for="contact-phone">Phone</label>
                         </div>
                     </fieldset>
                     <fieldset id="destination">
